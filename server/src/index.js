@@ -13,4 +13,5 @@ server.listen(process.env.PORT, () => {
 //     organization: "org-oWpxfNprnl36US7Fo6GPfIVu",
 //     apiKey: process.env.OPENAI_API_KEY,
 // });
+
 //console.log(configuration)
