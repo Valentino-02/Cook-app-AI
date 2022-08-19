@@ -1,17 +1,8 @@
-import server from './app'
-require('dotenv').config();
+import app from './app.js'
+import config from './config.js';
 
-server.listen(process.env.PORT, () => {
-   console.log('Server listening on Port: ',process.env.PORT ); 
+const PORT = process.env.PORT || config.port 
+
+const server = app.listen(PORT, () => {
+   console.log('Server listening on Port: ', server.address().port); 
   });
-
-
-// import { Configuration, OpenAIApi } from "openai";
-// require('dotenv').config()
-
-// const configuration = new Configuration({
-//     organization: "org-oWpxfNprnl36US7Fo6GPfIVu",
-//     apiKey: process.env.OPENAI_API_KEY,
-// });
-
-//console.log(configuration)
