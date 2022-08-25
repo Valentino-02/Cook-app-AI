@@ -1,4 +1,21 @@
 {"prompt": "Onion,Cheese,Bacon-->", "completition": " Name:Cheese-n-Bacon Bomb/nRecipe:/n1. Preheat the oven at 180 degrees Celsius./n2. Cook the bacon at low heat in a pan until crispy./n3. Slice the Onion thinly and then cook in the bacon grease./n4. Layer the cheese and the cooked onions and bacon between slices of bread./n5. Bake the sandwich for 5-10 minutes, or until cheese is melted and the bread is toasted. END"}
 {"prompt": "Onion,Cheese,Bacon,Bread-->", "completition": " Name:Cheese-n-Bacon Bomb/nRecipe:/n1. Preheat the oven at 180 degrees Celsius./n2. Cook the bacon at low heat in a pan until crispy./n3. Slice the Onion thinly and then cook in the bacon grease./n4. Layer the cheese and the cooked onions and bacon between slices of bread./n5. Bake the sandwich for 5-10 minutes, or until cheese is melted and the bread is toasted. END"}
-{"prompt": "Pulled Pork,Pickles,Garlic,Tomatoe-->", "completition": " Name:/nRecipe:/n1. Chop the garlic and cook it in olive oil at a low temperature for 1-2 minutes./n2. Add the pulled pork to the garlic and cook until the pork is crsipy./n3. Slice the tomatoes and pickles in thin slices./n4. Spread the garlicky pork over a slice of bread and add the slices of tomatoe and pickles on top, then close the sandwhich END"}
+{"prompt": "Pulled Pork,Pickles,Garlic,Tomato-->", "completition": " Name:Porktastic Sandwich/nRecipe:/n1. Chop the garlic and cook it in olive oil at a low temperature for 1-2 minutes./n2. Add the pulled pork to the garlic and cook until the pork is crsipy./n3. Slice the tomatoes and pickles in thin slices./n4. Spread the garlicky pork over a slice of bread and add the slices of tomato and pickles on top, then close the sandwhich END"}
+{"prompt": "Egg,Tuna,Mayo,Pickles-->", "completition": " Name:/nRecipe:/n1. Chop the garlic and cook it in olive oil at a low temperature for 1-2 minutes./n2. Add the pulled pork to the garlic and cook until the pork is crsipy./n3. Slice the tomatoes and pickles in thin slices./n4. Spread the garlicky pork over a slice of bread and add the slices of tomato and pickles on top, then close the sandwhich END"}
+{"prompt": "Potato,Bell Pepper,Lettuce,Egg-->", "completition": " Name:/nRecipe:/n1. ./n2. ./n3. ./n4. ./n5. ./n6. END"}
+{"prompt": "Minced Lamb,Blue Cheese,Pear-->", "completition": " Name:/nRecipe:/n1. ./n2. ./n3. ./n4. ./n5. ./n6. END"}
+{"prompt": "Chocolate,Carrot,Beans,Ham-->", "completition": " Name:/nRecipe:/n1. ./n2. ./n3. ./n4. ./n5. ./n6. END"}
+{"prompt": "Ham,Honey,Chili Pepper-->", "completition": " Name:/nRecipe:/n1. ./n2. ./n3. ./n4. ./n5. ./n6. END"}
+{"prompt": "Ham,Honey,Chili Pepper,Tomato,Lemon,Rosemary-->", "completition": " Name:/nRecipe:/n1. ./n2. ./n3. ./n4. ./n5. ./n6. END"}
+{"prompt": "Onion,Carrot,Potatoes,Apple,Celery,Almond-->", "completition": " Name:/nRecipe:/n1. ./n2. ./n3. ./n4. ./n5. ./n6. END"}
+{"prompt": "Ham,Cheese-->", "completition": " Name:/nRecipe:/n1. ./n2. ./n3. ./n4. ./n5. ./n6. END"}
+{"prompt": "Chiken Breast,Ham,Beef,Pork-->", "completition": " Name:/nRecipe:/n1. ./n2. ./n3. ./n4. ./n5. ./n6. END"}
+{"prompt": "Chickpea,,,,-->", "completition": " Name:/nRecipe:/n1. ./n2. ./n3. ./n4. ./n5. ./n6. END"}
+{"prompt": "Sweet Potato,,,,-->", "completition": " Name:/nRecipe:/n1. ./n2. ./n3. ./n4. ./n5. ./n6. END"}
+{"prompt": "Lettuce,Bacon,Tomato-->", "completition": " Name:BLT Sandwich/nRecipe:/n1. We recomend using ripe station tomatoes for this recipe./n2. Slice the tomatoes thinly and season them with plenty salt and pepper./n3. Whash, dry and season the lettuce./n4. Cook the bacon until crispy ./n5. Assemble in two slices of toasted sandwich bread. END"}
+{"prompt": "Basil,Garlic,Nuts,Parmesan Cheese,Olive Oil,Chicken-->", "completition": " Name:Pesto Glory with Chicken/nRecipe:/n1. For this sandwhich we will be making a great pesto./n2. Using a mortar and pestle, start crushing the garlic with a bit of salt./n3. Then add the nuts and basil and keep crushing./n4. finally add the parmesan cheese and olive oil and incorporate, pesto done./n5. Cut a slice of chicken breast and cook it in high heat./n6. Assemble in a long bread, like a baguette. END"}
+{"prompt": "Beetroot,,,,-->", "completition": " Name:/nRecipe:/n1. ./n2. ./n3. ./n4. ./n5. ./n6. END"}
+{"prompt": "Salami,,,,-->", "completition": " Name:/nRecipe:/n1. ./n2. ./n3. ./n4. ./n5. ./n6. END"}
+{"prompt": "Butter,,,,-->", "completition": " Name:/nRecipe:/n1. ./n2. ./n3. ./n4. ./n5. ./n6. END"}
+{"prompt": "Mustard,,,,-->", "completition": " Name:/nRecipe:/n1. ./n2. ./n3. ./n4. ./n5. ./n6. END"}
 
