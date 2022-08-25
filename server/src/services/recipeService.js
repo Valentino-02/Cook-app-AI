@@ -1,67 +1,36 @@
-import * as recipe from '../database/recipe';
-import axios from 'axios';
-require('dotenv').config();
-const { OPENAI_URL,OPENAI_TOKEN } = process.env; // clave api externa
-
-// const url = 'https://api.openai.com/v1/completions'
-// const token = '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' //config.OPENAI_API_KEY
-const configuration = {headers: { 'Authorization': `Bearer ${OPENAI_TOKEN}`}}
-// const body = {
-//   "model": "text-ada-001",
-//   "prompt": "Say this is a test {}",
-//   "max_tokens": 10, // 
-//   "temperature": 0.5,
-//   "top_p": 1,
-//   "n": 1,
-//   "stream": false,
-//   "logprobs": null,
-//   "stop": "{}"
-// }
+import * as recipeDataAccess from '../dataAccess/recipeDataAccess';
 
 export const createNewRecipe = async (body) => {
-   // const createdRecipe = await axios.post(OPENAI_URL, body, configuration); // capa de servicio
-   //return createdRecipe.data;
-   // {
- const createdRecipe =    {
-  id: "cmpl-5iDz4HWxRQFES5NkQePDD6E3lD6mi",
-  object: "text_completion",
-  created: 1661221870,
-  model: "text-ada-001",
-  choices: [
-    {
-      text: "\n\nThis is a test.",
-      index: 0,
-      logprobs: null,
-      finish_reason: "stop"
-    }
-  ],
-  usage: {
-    prompt_tokens: 6,
-    completion_tokens: 7,
-    total_tokens: 13
-  }
-}
-   return createdRecipe;
+    const title = body.title;
+    delete body.title;
+    const bodyAI = await recipeDataAccess.createNewRecipeAI(body,title); // AI
+    const createdRecipe = await recipeDataAccess.createNewRecipe(bodyAI, title) // B.D.
+   return createdRecipe
 };
 
-export const getOneRecipe = async (recipeId) => {
-    let recipe = recipe.getOneRecipe(recipeId)
-    return 'recipe'
+export const getAllRecipes = async () => {
+  let AllRecipies = await recipeDataAccess.getAllRecipes()
+  return AllRecipies
 }
 
-export const updateOneRecipe = async (recipeId) => {
-    let updatedRecipe = recipe.updateOneRecipe(recipeId, changes)
-    return 'updatedRecipe'
+export const getOneRecipe = async (recipeId) => {
+    const recipe = recipeDataAccess.getOneRecipe(recipeId);
+    return recipe;
+}
+
+export const updateOneRecipe = async (recipeId,changes) => {
+    const updatedRecipe = recipeDataAccess.updateOneRecipe(recipeId, changes)
+    return updatedRecipe;
 }
 
 export const deleteOneRecipe = async (recipeId) => {
-    recipe.deleteOneRecipe(recipeId)
+    await recipeDataAccess.deleteOneRecipe(recipeId);
 }
 
 
 // {
 //   "id": "cmpl-5iDz4HWxRQFES5NkQePDD6E3lD6mi",
-//   "object": "text_completion",
+//   "object": "text_compconstion",
 //   "created": 1661221870,
 //   "model": "text-ada-001",
 //   "choices": [
@@ -74,7 +43,8 @@ export const deleteOneRecipe = async (recipeId) => {
 //   ],
 //   "usage": {
 //     "prompt_tokens": 6,
-//     "completion_tokens": 7,
+//     "compconstion_tokens": 7,
 //     "total_tokens": 13
 //   }
 // }
+
