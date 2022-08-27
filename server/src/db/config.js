@@ -1,6 +1,7 @@
 import { Sequelize } from 'sequelize';
 import dotenv from "dotenv";
 import RecipesFactory from './models/recipeModel';
+//import recipeModel from './models/recipeModel';
 dotenv.config();
 
 const {DB_USER, DB_PASSWORD, DB_HOST, DB_NAME} = process.env;  
@@ -13,6 +14,7 @@ const Recipes = RecipesFactory(conexionDB)
 
 console.log('DataBase :',DB_NAME)
 console.log('Tablas : ',conexionDB.models)
+console.log(Recipes)
 
 /* Relacion de muchos a muchos */
 //Recipes.belongsToMany(Movies, {through : 'RecipesMovies'}); // tabla intermedia//
